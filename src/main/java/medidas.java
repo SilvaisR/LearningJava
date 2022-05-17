@@ -2,6 +2,7 @@ public class medidas {
 
     public static void main(String[] args){
         System.out.println("Olá mundo!");
+        System.out.println("Vamos com tudo dessa vez!");
 
         int altura = 6, largura = 3, resultado = altura * largura;
 
