@@ -6,11 +6,23 @@ pessoa.
 import java.util.Scanner;
 
 public class caixaEletronico {
-    Scanner scan = new Scanner(System.in);
     static double saldoEmContaInicial = 600;
     public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
         double saldo = saldoEmContaInicial;
+        System.out.println("Você vai digitar o número de acordo com a sua opção\n" +
+                "1 - Depositar\n" +
+                "2 - Sacar\n");
+        System.out.print("Opção: ");
+        int opcaoUsuario = scan.nextInt();
+        System.out.println();
+        if(opcaoUsuario == 1){
+            System.out.print("Digite o valor que deseja depositar: ");
+            double valorDepositado = scan.nextDouble();
+            saldo = depositar(valorDepositado);
+        }else if(opcaoUsuario == 2){
 
+        }
     }
 
     public static double depositar(double valor){
