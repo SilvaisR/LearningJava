@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class caixaEletronico {
     static double saldoEmContaInicial = 600;
     public static void main(String[] args){
+        System.out.println("demo: " + saldoEmContaInicial);
         Scanner scan = new Scanner(System.in);
         double saldo = saldoEmContaInicial;
         System.out.println("Você vai digitar o número de acordo com a sua opção\n" +
@@ -20,8 +21,14 @@ public class caixaEletronico {
             System.out.print("Digite o valor que deseja depositar: ");
             double valorDepositado = scan.nextDouble();
             saldo = depositar(valorDepositado);
+            System.out.println("Seu saldo atual é: " + saldo);
+            System.out.println("demo: " + saldoEmContaInicial);
         }else if(opcaoUsuario == 2){
-
+            System.out.print("Digite o valor que deseja sacar: ");
+            double valorSacado = scan.nextDouble();
+            saldo = sacar(valorSacado);
+            System.out.println("Seu saldo atual é: " + saldo);
+            System.out.println("demo: " + saldoEmContaInicial);
         }
     }
 
