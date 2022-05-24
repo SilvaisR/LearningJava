@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class conta9 {
     public static void main(String[] args){
-
+        Scanner scan = new Scanner(System.in);
         System.out.print("Digite aqui o primeiro número: ");
         int opcaoUser1 = scan.nextInt();
         System.out.print("\nDigite aqui o segundo número: ");
@@ -16,9 +16,8 @@ public class conta9 {
         int contador;
         for(int i=0; i<=opcaoUser2; i++){
             String num = Integer.toString(i);
-            char numArr [] = num.toCharArray();
-            for
-
+            System.out.println();
         }
+
     }
 }
