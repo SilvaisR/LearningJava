@@ -11,6 +11,9 @@ public class medidas {
     // 3.2 - Métodos e Funções
     public static void main(String[] args){
         System.out.println("Escolha o cálculo desejado: ");
-
+        System.out.println("(1) - Área do quadrado");
+        System.out.println("(2) - Área do retângulo");
+        System.out.println("(3) - Área do triângulo");
+        System.out.println("(4) - Área do circulo");
     }
 }
