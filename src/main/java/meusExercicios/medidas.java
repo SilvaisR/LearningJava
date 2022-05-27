@@ -1,3 +1,5 @@
+package meusExercicios;
+
 public class medidas {
 
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-// Here I'll make a code that show the media of a studant
+package meusExercicios;// Here I'll make a code that show the media of a studant
 
 import java.util.Scanner;
 

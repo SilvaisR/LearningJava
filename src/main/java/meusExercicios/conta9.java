@@ -1,4 +1,4 @@
-/*
+package meusExercicios;/*
 Nesse exercício eu vou escrever o seguinte programa, o usuário digita um número que ele quer que seja contado,
 e digita um segundo número que é até onde ele quer a contagem, então o programa vai contar de 0 até o segundo digito do
 usuário e vai dizer quantas vezes o primeiro número apareceu ao decorrer da contagem.

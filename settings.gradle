@@ -1,2 +1,3 @@
 rootProject.name = 'testeLearningJava'
+include 'fundamentosJava'
 

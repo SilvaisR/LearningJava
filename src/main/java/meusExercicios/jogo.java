@@ -1,4 +1,4 @@
-// Aqui eu vou criar um jogo onde a maquina escolhe um número e pede para o usuário tentar adivinhar.
+package meusExercicios;// Aqui eu vou criar um meusExercicios.jogo onde a maquina escolhe um número e pede para o usuário tentar adivinhar.
 import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.Random;
