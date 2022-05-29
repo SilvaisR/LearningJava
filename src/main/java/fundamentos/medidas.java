@@ -68,8 +68,8 @@ public class medidas {
         return valor * valor;
     }
 
-    public static double calcularAreaRetangulo(double valor1, double valor2){
-        return valor1 * valor2;
+    public static double calcularAreaRetangulo(double lado1, double lado2){
+        return lado1 * lado2;
     }
 
     public static double calcularAreaTriangulo(double base, double altura){
