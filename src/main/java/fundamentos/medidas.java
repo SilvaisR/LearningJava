@@ -37,7 +37,29 @@ public class medidas {
                 double lado2 = scan.nextDouble();
                 double resultado2 = calcularAreaRetangulo(lado1, lado2);
                 System.out.println("\nO resultado do cálculo da área do retângulo é de: " + resultado2);
+                break;
 
+            case 3:
+                System.out.println("Digite o valor da base e da altura para que possamos calcular o triangulo.");
+                System.out.print("Base: ");
+                double base = scan.nextDouble();
+                System.out.print("\nAltura: ");
+                double altura = scan.nextDouble();
+                double resultado3 = calcularAreaTriangulo(base, altura);
+                System.out.println("\nO resultado do cálculo da área do triângulo é de: " + resultado3);
+                break;
+
+            case 4:
+                System.out.println("Digite o raio do circulo para que possamos calcular sua área.");
+                System.out.print("Raio: ");
+                double raio = scan.nextDouble();
+                double resultado4 = calcularAreaCirculo(raio);
+                System.out.println("\nO resultado do cálculo da área do círculo é de: " + resultado4);
+                break;
+
+            default:
+                System.out.println("Você digitou uma opção inválida.");
+                break;
 
         }
     }
@@ -48,5 +70,13 @@ public class medidas {
 
     public static double calcularAreaRetangulo(double valor1, double valor2){
         return valor1 * valor2;
+    }
+
+    public static double calcularAreaTriangulo(double base, double altura){
+        return (base * altura) / 2;
+    }
+
+    public static double calcularAreaCirculo(double raio){
+        return Math.PI * raio * raio;
     }
 }
