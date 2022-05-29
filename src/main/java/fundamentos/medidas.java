@@ -2,6 +2,7 @@
 package fundamentos;
 
 // 2 - Bibliotecas
+
 import java.util.Scanner;
 
 // 3 - Classes
@@ -9,7 +10,7 @@ public class medidas {
     // 3.1 - Atributos
 
     // 3.2 - Métodos e Funções
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Escolha o cálculo desejado: ");
         System.out.println("(1) - Area do quadrado");
@@ -20,7 +21,7 @@ public class medidas {
         int opcao = scan.nextInt();
         System.out.println();
 
-        switch(opcao){
+        switch (opcao) {
             case 1:
                 System.out.println("Digite O valor do lado de um dos lados do quadrado para que possamos fazer a conta.");
                 System.out.print("Opção: ");
@@ -64,19 +65,19 @@ public class medidas {
         }
     }
 
-    public static double calculaAreaQuadrado(double valor){
+    public static double calculaAreaQuadrado(double valor) {
         return valor * valor;
     }
 
-    public static double calcularAreaRetangulo(double lado1, double lado2){
+    public static double calcularAreaRetangulo(double lado1, double lado2) {
         return lado1 * lado2;
     }
 
-    public static double calcularAreaTriangulo(double base, double altura){
+    public static double calcularAreaTriangulo(double base, double altura) {
         return (base * altura) / 2;
     }
 
-    public static double calcularAreaCirculo(double raio){
+    public static double calcularAreaCirculo(double raio) {
         return Math.PI * raio * raio;
     }
 }
