@@ -19,6 +19,7 @@ public class medidas {
         System.out.println("(4) - Area do circulo");
         System.out.println("(5) - Contagem progressiva");
         System.out.println("(6) - Contagem Regressiva");
+        System.out.println("(7) - Contagem Fibonacci");
         System.out.print("Digite aqui sua opção: ");
         int opcao = scan.nextInt();
         System.out.println();
@@ -76,6 +77,14 @@ public class medidas {
                 contagemRegressiva(num);
                 break;
 
+            case 7:
+                System.out.println("Digite um número de vezes que você quer ver a contagem fibonacci.");
+                System.out.print("Valor: ");
+                int valor1 = scan.nextInt();
+                System.out.println();
+                contagemFibonacci(valor1);
+                break;
+
             default:
                 System.out.println("Você digitou uma opção inválida.");
                 break;
@@ -108,6 +117,19 @@ public class medidas {
     public static void contagemRegressiva(int valor) {
         for (int i = valor; i >= 0; i--) {
             System.out.println(i + " ");
+        }
+    }
+
+    public static void contagemFibonacci(int contador){
+        int init = 1;
+        int fib = 2;
+        int soma;
+        System.out.print("1 ");
+        for(int i = 1; i <= contador; i++){
+            System.out.print(fib + " ");
+            soma = init + fib;
+            init = fib;
+            fib = soma;
         }
     }
 
