@@ -17,6 +17,8 @@ public class medidas {
         System.out.println("(2) - Area do retângulo");
         System.out.println("(3) - Area do triângulo");
         System.out.println("(4) - Area do circulo");
+        System.out.println("(5) - Contagem progressiva");
+        System.out.println("(6) - Contagem Regressiva");
         System.out.print("Digite aqui sua opção: ");
         int opcao = scan.nextInt();
         System.out.println();
@@ -58,6 +60,22 @@ public class medidas {
                 System.out.println("\nO resultado do cálculo da área do círculo é de: " + resultado4);
                 break;
 
+            case 5:
+                System.out.println("Digite um valor que é até onde iremos contar.");
+                System.out.print("Valor: ");
+                int valor = scan.nextInt();
+                System.out.println();
+                contagemProgressiva(valor);
+                break;
+
+            case 6:
+                System.out.println("Digite um valor que é de onde iremos começar a contagem.");
+                System.out.print("Valor: ");
+                int num = scan.nextInt();
+                System.out.println();
+                contagemRegressiva(num);
+                break;
+
             default:
                 System.out.println("Você digitou uma opção inválida.");
                 break;
@@ -80,4 +98,17 @@ public class medidas {
     public static double calcularAreaCirculo(double raio) {
         return Math.PI * raio * raio;
     }
+
+    public static void contagemProgressiva(int valor) {
+        for (int i = 1; i <= valor; i++) {
+            System.out.println(i + "");
+        }
+    }
+
+    public static void contagemRegressiva(int valor) {
+        for (int i = valor; i >= 0; i--) {
+            System.out.println(i + " ");
+        }
+    }
+
 }
