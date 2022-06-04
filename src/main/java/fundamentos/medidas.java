@@ -4,6 +4,7 @@ package fundamentos;
 // 2 - Bibliotecas
 
 import java.util.Scanner;
+import java.util.Random;
 
 // 3 - Classes
 public class medidas {
@@ -12,6 +13,7 @@ public class medidas {
     // 3.2 - Métodos e Funções
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         System.out.println("Escolha o cálculo desejado: ");
         System.out.println("(1) - Area do quadrado");
         System.out.println("(2) - Area do retângulo");
@@ -20,6 +22,7 @@ public class medidas {
         System.out.println("(5) - Contagem progressiva");
         System.out.println("(6) - Contagem Regressiva");
         System.out.println("(7) - Contagem Fibonacci");
+        System.out.println("(8) - Adivinhar número");
         System.out.print("Digite aqui sua opção: ");
         int opcao = scan.nextInt();
         System.out.println();
@@ -85,6 +88,11 @@ public class medidas {
                 contagemFibonacci(valor1);
                 break;
 
+            case 8:
+                System.out.println("Eu vou pensar em um número de 1 à 10 e você vai tentando até adivinhar.");
+                adivinharNumero();
+                break;
+
             default:
                 System.out.println("Você digitou uma opção inválida.");
                 break;
@@ -131,6 +139,18 @@ public class medidas {
             init = fib;
             fib = soma;
         }
+    }
+
+    public static void adivinharNumero(){
+        Random gerador = new Random();
+        Scanner scan = new Scanner(System.in);
+        int opcaoUser;
+        int opcaoMaquina = gerador.nextInt(11);
+        do {
+            System.out.print("Opção: ");
+            opcaoUser = scan.nextInt();
+        } while(opcaoMaquina != opcaoUser);
+        System.out.println("Acertou miseravi!!!");
     }
 
 }
